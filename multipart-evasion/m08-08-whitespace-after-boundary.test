@@ -1,7 +1,7 @@
 # This test is used to ensure a request without an attack
 # results with a normal (200) response.
-#
-# @Missed       RESPONSE_STATUS ^200$
+# NAXSI_NOCHECK : nginx suppress the leading whitelispace
+# @NAXSI_NOCHECK       RESPONSE_STATUS ^200$
 # @Unknown
 #
 POST /?m00-01 HTTP/1.0

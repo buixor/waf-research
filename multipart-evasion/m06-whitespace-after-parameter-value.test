@@ -1,8 +1,8 @@
 # Use a whitespace character after boundary value, testing those parsers
 # that use everything until the end of the line.
-#
+# NAXSI_NOCHECK : nginx strips leading spaces after header.
 # @Blocked  RESPONSE_STATUS !^200
-# @Missed
+# @NAXSI_NOCHECK
 #
 # - PHP 5.2.3 - no effect (uses "0000")
 #

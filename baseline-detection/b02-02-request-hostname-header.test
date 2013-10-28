@@ -1,6 +1,6 @@
 # Attack in request hostname (header)
-#
-# @OK       RESPONSE_STATUS !^200$
+# NOCHECK : Makes little sense on nginx ...
+# @NAXSI_NOCHECK       RESPONSE_STATUS ^200$
 # @Missed
 #
 GET /?b02-02 HTTP/1.0

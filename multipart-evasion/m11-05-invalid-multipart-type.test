@@ -1,6 +1,6 @@
 # Test for case-sensitive comparison of MIME types.
-#
-# @Blocked  RESPONSE_STATUS !^200
+# NAXSI_NOCHECK : I don't think MIME type has to be lower case (RFC 2045)
+# @NAXSI_NOCHECK  RESPONSE_STATUS !^200
 # @Missed
 #
 POST /?m11-05 HTTP/1.0

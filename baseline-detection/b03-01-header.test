@@ -1,6 +1,6 @@
 # Attack in random header.
-#
-# @OK       RESPONSE_STATUS !^200$
+# NOCHECK : Makes little sense on nginx ...
+# @NAXSI_NOCHECK       RESPONSE_STATUS ^200$
 # @Missed
 #
 GET /?b03-01 HTTP/1.0

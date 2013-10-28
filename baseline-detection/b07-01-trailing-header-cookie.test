@@ -1,7 +1,7 @@
 # Attack payload in trailing request header.
-#
+# NAXSI_NOCHECK : nginx will strip extra headers after body
 # @OK       RESPONSE_STATUS !^200$
-# @Missed
+# @NAXSI_NOCHECK
 #
 POST /?b07-1 HTTP/1.1
 Transfer-Encoding: chunked
